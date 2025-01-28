@@ -34,7 +34,18 @@
             border: .25vmin solid black;
         }
     </style>
-    <script src="game.js" defer type="module"></script>
+    <script 
+        src="game.js" defer type="module">
+        
+        function drawSnake() {
+    const snakeElement = document.createElement('div');
+    snakeElement.style.gridRowStart = 11; // Example position
+    snakeElement.style.gridColumnStart = 11;
+    snakeElement.classList.add('snake');
+    gameBoard.appendChild(snakeElement);
+}
+
+    </script>
 </head>
 <body>
     <div id="game-board"></div>
