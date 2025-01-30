@@ -49,3 +49,5 @@ function draw() {
 function checkDeath() {
     gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
 }
+
+window.requestAnimationFrame(main);
