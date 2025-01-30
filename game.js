@@ -4,9 +4,11 @@ import { update as updateFood, draw as drawFood } from './food.js';
 
 import { outsideGrid } from './grid.js';
 
+
 let lastRenderTime = 0
 let gameOver = false
 const gameBoard = document.getElementById('game-board');
+console.log("Game board found:", gameBoard);
 
 function main(currentTime) {
     if (gameOver) {
@@ -15,8 +17,6 @@ function main(currentTime) {
         }
         return
     }
-
-
 
     const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000
     if (secondsSinceLastRender < 1 / SNAKE_SPEED) return
