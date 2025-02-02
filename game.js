@@ -8,7 +8,6 @@ import { outsideGrid } from './grid.js';
 let lastRenderTime = 0
 let gameOver = false
 const gameBoard = document.getElementById('game-board');
-console.log("Game board found:", gameBoard);
 
 function main(currentTime) {
     if (gameOver) {
